@@ -35,7 +35,7 @@ On a construit l’image Docker de l’API churn avec un tag versionné (v1) pou
 **Étape 5 : Charger explicitement l’image dans Minikube**
 
 
-
+On a copié l’image Docker de l’API churn dans l’environnement Minikube, afin que Kubernetes puisse l’utiliser pour créer les pods sans avoir besoin de la télécharger depuis un registre externe.
 
 
 
