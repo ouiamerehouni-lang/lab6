@@ -47,3 +47,9 @@ On a déployé l’API churn dans Kubernetes en créant un Deployment qui lance 
 <img width="933" height="279" alt="image" src="https://github.com/user-attachments/assets/d788228d-cd19-4dd5-bdef-bfd256eaf1b6" />
 
 
+**Étape 7 : Exposer l’API via un Service NodePort**
+
+On a exposé l’API churn à l’extérieur du cluster Kubernetes en créant un Service de type NodePort. Ce service permet de rediriger les requêtes reçues sur le port 30080 du nœud vers le port 8000 de l’API à l’intérieur des Pods. On a ensuite vérifié que le service est bien créé et configuré, puis établi un accès local au cluster grâce au port-forwarding. Enfin, on a testé le bon fonctionnement de l’API en envoyant une requête POST depuis Postman vers l’endpoint /predict.
+
+<img width="425" height="453" alt="image" src="https://github.com/user-attachments/assets/cdb88144-844a-4d6f-82b4-547d9306c7fb" />
+<img width="903" height="311" alt="image" src="https://github.com/user-attachments/assets/b2722c23-09f5-4a2c-942d-065689f09977" />
