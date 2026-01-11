@@ -63,4 +63,5 @@ On a ensuite validé le bon fonctionnement de l'ensemble du système en envoyant
 <img width="833" height="330" alt="image" src="https://github.com/user-attachments/assets/3d29d3c2-8a18-425a-9793-7a487952a65c" />
 <img width="864" height="663" alt="image" src="https://github.com/user-attachments/assets/76f3e711-2b5c-4ae4-aeb0-6a47b1cd5c7a" />
 <img width="913" height="103" alt="image" src="https://github.com/user-attachments/assets/899db95f-4012-4f8e-94f5-1b6986192a5a" />
+<img width="923" height="207" alt="image" src="https://github.com/user-attachments/assets/8872a5ba-ee97-4dd6-9a32-5b6041d16a70" />
 
