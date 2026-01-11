@@ -102,3 +102,12 @@ Concrètement, on a créé un volume persistant (PVC) pour conserver les fichier
 <img width="930" height="400" alt="image" src="https://github.com/user-attachments/assets/73b5e3ab-7ed4-4aab-8d63-58fc549baa9c" />
 <img width="932" height="329" alt="image" src="https://github.com/user-attachments/assets/8ff2d311-a5c3-45a7-8b55-132a37f6ee75" />
 
+
+**Étape 13 : NetworkPolicy**
+
+On a défini une règle réseau pour contrôler qui peut accéder à l’API Churn à l’intérieur du cluster Kubernetes.
+Grâce à la NetworkPolicy, on autorise uniquement le trafic entrant provenant d’autres Pods du cluster vers les Pods churn-api, et seulement sur le port 8000. Tout autre trafic entrant est implicitement bloqué.
+
+<img width="904" height="397" alt="image" src="https://github.com/user-attachments/assets/6ea332ed-ce12-40d3-8b02-cf81b1555a93" />
+
+
