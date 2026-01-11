@@ -59,9 +59,18 @@ On a ensuite validé le bon fonctionnement de l'ensemble du système en envoyant
 
 **Étape 8 : Injecter la configuration MLOps via ConfigMap**
 
-
+On a ajouté une configuration externe à l’API via un ConfigMap Kubernetes, ce qui permet de changer le nom du modèle et le niveau de logs sans modifier le code ni l’image Docker.
 <img width="833" height="330" alt="image" src="https://github.com/user-attachments/assets/3d29d3c2-8a18-425a-9793-7a487952a65c" />
 <img width="864" height="663" alt="image" src="https://github.com/user-attachments/assets/76f3e711-2b5c-4ae4-aeb0-6a47b1cd5c7a" />
 <img width="913" height="103" alt="image" src="https://github.com/user-attachments/assets/899db95f-4012-4f8e-94f5-1b6986192a5a" />
 <img width="923" height="207" alt="image" src="https://github.com/user-attachments/assets/8872a5ba-ee97-4dd6-9a32-5b6041d16a70" />
+
+
+**Étape 9 : Gérer les secrets (MONITORING_TOKEN)**
+
+On a sécurisé les informations sensibles en créant un Secret Kubernetes. Contrairement au ConfigMap, cet objet permet de stocker des données confidentielles, comme le jeton MONITORING_TOKEN, en utilisant un encodage Base64 pour éviter l'affichage en clair dans les fichiers de configuration.
+On a ensuite intégré ce secret dans le Deployment afin qu'il soit injecté comme variable d'environnement dans les Pods.
+
+<img width="846" height="648" alt="image" src="https://github.com/user-attachments/assets/04481ab6-006e-4290-b5f7-fd7d8d64f63d" />
+<img width="927" height="250" alt="image" src="https://github.com/user-attachments/assets/a0ea8b12-0ab8-4e6f-bed8-6648d4ba22cd" />
 
