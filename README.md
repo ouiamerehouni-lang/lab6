@@ -74,3 +74,9 @@ On a ensuite intégré ce secret dans le Deployment afin qu'il soit injecté com
 <img width="846" height="648" alt="image" src="https://github.com/user-attachments/assets/04481ab6-006e-4290-b5f7-fd7d8d64f63d" />
 <img width="927" height="250" alt="image" src="https://github.com/user-attachments/assets/a0ea8b12-0ab8-4e6f-bed8-6648d4ba22cd" />
 
+**Étape 10 : Mise en place des endpoints de santé et des probes Kubernetes pour l’API Churn**
+
+On a rendu l’API Churn observable et robuste en ajoutant des endpoints de santé dédiés, afin que Kubernetes puisse vérifier automatiquement que l’application est prête à recevoir du trafic et qu’elle fonctionne normalement. Ensuite, on a reconstruit et redéployé l’image Docker pour que ces nouveaux endpoints soient pris en compte par le cluster Minikube.
+
+<img width="922" height="281" alt="image" src="https://github.com/user-attachments/assets/b2f46597-c1b5-41fa-9334-f6adc132e861" />
+<img width="906" height="59" alt="image" src="https://github.com/user-attachments/assets/cbb41ba4-1481-4642-87f1-1105a66b44ec" />
