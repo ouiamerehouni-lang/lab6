@@ -53,8 +53,6 @@ On a rendu l'application accessible à l'extérieur du cluster en configurant un
 On a ensuite validé le bon fonctionnement de l'ensemble du système en envoyant une requête JSON à FastAPI. Cette étape a permis de confirmer que l'infrastructure Kubernetes redirige correctement les données vers le modèle de Machine Learning et que celui-ci renvoie une prédiction valide en temps réel, garantissant ainsi la disponibilité opérationnelle de l'API.
 
 <img width="425" height="453" alt="image" src="https://github.com/user-attachments/assets/cdb88144-844a-4d6f-82b4-547d9306c7fb" />
-<img width="903" height="311" alt="image" src="https://github.com/user-attachments/assets/b2722c23-09f5-4a2c-942d-065689f09977" />
-
 <img width="865" height="346" alt="image" src="https://github.com/user-attachments/assets/58bdbf36-e78d-4737-a779-c920ef8c5d71" />
 <img width="925" height="372" alt="image" src="https://github.com/user-attachments/assets/e4c711a7-a6b1-4f29-820f-93061596f36e" />
 
