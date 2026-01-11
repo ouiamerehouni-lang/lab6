@@ -49,7 +49,14 @@ On a déployé l’API churn dans Kubernetes en créant un Deployment qui lance 
 
 **Étape 7 : Exposer l’API via un Service NodePort**
 
-On a exposé l’API churn à l’extérieur du cluster Kubernetes en créant un Service de type NodePort. Ce service permet de rediriger les requêtes reçues sur le port 30080 du nœud vers le port 8000 de l’API à l’intérieur des Pods. On a ensuite vérifié que le service est bien créé et configuré, puis établi un accès local au cluster grâce au port-forwarding. Enfin, on a testé le bon fonctionnement de l’API en envoyant une requête POST depuis Postman vers l’endpoint /predict.
+On a rendu l'application accessible à l'extérieur du cluster en configurant un Service NodePort, créant ainsi un point d'accès stable sur le port 30080. Ce service fait le lien entre les requêtes externes et le port 8000 de nos conteneurs.
 
 <img width="425" height="453" alt="image" src="https://github.com/user-attachments/assets/cdb88144-844a-4d6f-82b4-547d9306c7fb" />
 <img width="903" height="311" alt="image" src="https://github.com/user-attachments/assets/b2722c23-09f5-4a2c-942d-065689f09977" />
+
+On a ensuite validé le bon fonctionnement de l'ensemble du système en envoyant une requête JSON à FastAPI. Cette étape a permis de confirmer que l'infrastructure Kubernetes redirige correctement les données vers le modèle de Machine Learning et que celui-ci renvoie une prédiction valide en temps réel, garantissant ainsi la disponibilité opérationnelle de l'API.
+<img width="865" height="346" alt="image" src="https://github.com/user-attachments/assets/58bdbf36-e78d-4737-a779-c920ef8c5d71" />
+<img width="925" height="372" alt="image" src="https://github.com/user-attachments/assets/e4c711a7-a6b1-4f29-820f-93061596f36e" />
+
+
+****
