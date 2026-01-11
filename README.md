@@ -41,3 +41,9 @@ On a transféré l’image Docker churn-api:v1 dans Minikube afin que Kubernetes
 
 **Étape 6 : Deployment Kubernetes pour l’API churn**
 
+On a déployé l’API churn dans Kubernetes en créant un Deployment qui lance deux réplicas de l’application à partir de l’image Docker churn-api:v1. On a ainsi assuré que l’API fonctionne de manière continue, avec plusieurs Pods gérés automatiquement par Kubernetes.
+
+<img width="854" height="600" alt="image" src="https://github.com/user-attachments/assets/7c81ab06-67d5-42d9-bdbb-c4f56906259b" />
+<img width="933" height="279" alt="image" src="https://github.com/user-attachments/assets/d788228d-cd19-4dd5-bdef-bfd256eaf1b6" />
+
+
