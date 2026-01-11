@@ -80,3 +80,14 @@ On a rendu l’API Churn observable et robuste en ajoutant des endpoints de sant
 
 <img width="922" height="281" alt="image" src="https://github.com/user-attachments/assets/b2f46597-c1b5-41fa-9334-f6adc132e861" />
 <img width="906" height="59" alt="image" src="https://github.com/user-attachments/assets/cbb41ba4-1481-4642-87f1-1105a66b44ec" />
+
+
+
+**Étape 11 : Ajouter les probes (liveness / readiness / startup)**
+
+On a appris à Kubernetes comment surveiller automatiquement l’état de l’API Churn en configurant des probes de santé.
+Kubernetes sait quand l’application a correctement démarré, quand elle est prête à recevoir du trafic
+
+<img width="916" height="581" alt="image" src="https://github.com/user-attachments/assets/e7541864-aaa5-4639-a912-984a4bfc892a" />
+<img width="925" height="447" alt="image" src="https://github.com/user-attachments/assets/7345bdc8-86fc-4afc-a960-044010399dc0" />
+
