@@ -91,3 +91,14 @@ Kubernetes sait quand l’application a correctement démarré, quand elle est p
 <img width="916" height="581" alt="image" src="https://github.com/user-attachments/assets/e7541864-aaa5-4639-a912-984a4bfc892a" />
 <img width="925" height="447" alt="image" src="https://github.com/user-attachments/assets/7345bdc8-86fc-4afc-a960-044010399dc0" />
 
+
+
+**Étape 12 : Volume persistant pour registry + logs**
+
+On a mis en place un stockage persistant pour sécuriser les modèles et les logs de l’API Churn.
+Concrètement, on a créé un volume persistant (PVC) pour conserver les fichiers même si les Pods Kubernetes sont supprimés ou redémarrés. On a ensuite utilisé un Job Kubernetes pour entraîner un premier modèle et l’enregistrer directement dans ce volume.
+
+<img width="928" height="453" alt="image" src="https://github.com/user-attachments/assets/e6533eb9-a8f9-40c1-94f7-52f94fd19d43" />
+<img width="930" height="400" alt="image" src="https://github.com/user-attachments/assets/73b5e3ab-7ed4-4aab-8d63-58fc549baa9c" />
+<img width="932" height="329" alt="image" src="https://github.com/user-attachments/assets/8ff2d311-a5c3-45a7-8b55-132a37f6ee75" />
+
