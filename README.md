@@ -111,3 +111,11 @@ Grâce à la NetworkPolicy, on autorise uniquement le trafic entrant provenant d
 <img width="904" height="397" alt="image" src="https://github.com/user-attachments/assets/6ea332ed-ce12-40d3-8b02-cf81b1555a93" />
 
 
+**Étape 14 : Vérifications finales**
+
+On a conclu le lab en provoquant et en détectant un drift statistique majeur, ce qui a validé la boucle complète de monitoring MLOps. En injectant des données aberrantes, le système a immédiatement levé des alertes sur les variables num_complaints et avg_session_minutes. Cette manipulation a prouvé que l'architecture est capable de détecter une perte de pertinence du modèle.
+
+<img width="911" height="198" alt="image" src="https://github.com/user-attachments/assets/7499c62e-f90f-463d-acef-55f4a3844385" />
+<img width="910" height="121" alt="image" src="https://github.com/user-attachments/assets/7921f968-b72b-4e08-9230-16f76168e2d5" />
+<img width="929" height="278" alt="image" src="https://github.com/user-attachments/assets/25719822-5c37-4b54-9890-471871e29700" />
+
